@@ -1480,3 +1480,4 @@ shinyApp(
   options = list(height=1000,width="100%")
 )
 ```
+
