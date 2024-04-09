@@ -5,10 +5,18 @@ website:
   title: "bhrigukumar"
   navbar:
     left:
+      - href: about.qmd
+        text: Bhrigu Kumar Rajbongshi
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: about
+      - href: miipw.qmd
+        text: miipw
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
 
 format:
   html:

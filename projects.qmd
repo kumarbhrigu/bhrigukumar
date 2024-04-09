@@ -1,0 +1,18 @@
+Here is list of projects I have completed
+
+-   R package longit
+
+-   R package MIIPW
+
+-   R package jmBIG
+
+```{=html}
+<style>
+  body {
+  background-image: url("image/background1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  
+</style>
+```

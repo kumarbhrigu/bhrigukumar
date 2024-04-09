@@ -9,6 +9,8 @@ website:
         text: Home
       - href: about.qmd
         text: about
+      - href: miipw.qmd
+        text: miipw
 
 format:
   html:

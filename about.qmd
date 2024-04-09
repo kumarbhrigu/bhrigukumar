@@ -1,9 +1,22 @@
 ---
-title: "About"
+title: "Bhrigu Kumar Rajbongshi"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+    - icon: github
+      text: Github
+      href: https://github.com
+    - icon: envelope
+      text: Gmail
+      href: kumarbhrigu536@gmail.com
 ---
 
-About this site
+*Senior Research Fellow*
 
-```{r}
-1 + 1
-```
+*Department of Mathematics & Computing*
+
+*Indian Institute of Technology (Dhanbad)*

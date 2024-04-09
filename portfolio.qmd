@@ -1,0 +1,21 @@
+---
+title: "List of projects : "
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+
+<style>
+  body {
+  background-image: url("image/background1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  
+</style>

@@ -1,0 +1,15 @@
+
+<div style="text-align: center;">
+<iframe src="image/resume.pdf" width="800" height="800">
+</iframe>
+</div>
+
+
+<style>
+  body {
+  background-image: url("image/background1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  
+</style>
