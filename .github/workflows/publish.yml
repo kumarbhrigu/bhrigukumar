@@ -11,6 +11,8 @@ website:
         text: about
       - href: miipw.qmd
         text: miipw
+      - href: test.qmd
+        text: textshiny
 
 format:
   html:
