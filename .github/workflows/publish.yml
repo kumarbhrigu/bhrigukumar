@@ -11,8 +11,8 @@ website:
         text: about
       - href: miipw.qmd
         text: miipw
-      - href: test.qmd
-        text: textshiny
+      - href: Resume.qmd
+        text: myResume
 
 format:
   html:

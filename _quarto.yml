@@ -11,8 +11,8 @@ website:
         text: Home
       - href: miipw.qmd
         text: miipw
-      - href: test.qmd
-        text: testshiny
+      - href: Resume.qmd
+        text: myresume
     right:
       - about.qmd
       - icon: github
