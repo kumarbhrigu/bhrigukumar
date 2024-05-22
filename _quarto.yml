@@ -13,6 +13,10 @@ website:
         text: miipw
       - href: Resume.qmd
         text: myresume
+      - href: portfolio.qmd
+        text: portfolio
+      - href: projects.qmd
+        text: projects
     right:
       - about.qmd
       - icon: github
