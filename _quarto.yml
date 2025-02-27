@@ -5,8 +5,6 @@ website:
   title: ""
   navbar:
     left:
-      - href: about.qmd
-        text: Bhrigu Kumar Rajbongshi
       - href: index.qmd
         text: Home
       - href: miipw.qmd
