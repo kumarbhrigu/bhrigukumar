@@ -12,7 +12,7 @@ website:
       - href: miipw.qmd
         text: miipw
       - href: Resume.qmd
-        text: myresume
+        text: CV
       - href: portfolio.qmd
         text: portfolio
       - href: projects.qmd
