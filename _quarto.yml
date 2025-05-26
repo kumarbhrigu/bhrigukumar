@@ -7,10 +7,10 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: miipw.qmd
-        text: miipw
       - href: Resume.qmd
         text: CV
+      - href: miipw.qmd
+        text: miipw
       - href: portfolio.qmd
         text: portfolio
       - href: projects.qmd

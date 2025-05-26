@@ -1,11 +1,38 @@
 ---
 title: ""
+format: html
 ---
 
-This is a Quarto website.
+```{=html}
+<!-- SECTION: Main content with text on left and image on right -->
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;">
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+  <div style="flex: 1; min-width: 250px;">
+    <h1>Welcome to My Academic Website</h1>
+    <p>Hi! I’m <strong>Bhrigu Kumar Rajbongshi</strong>, currently a Senior Research Fellow at the Department of Mathematics & Computing, Indian Institute of Technology (IIT) Dhanbad.</p>
+  </div>
 
-```{r}
-1 + 1
+  <div style="flex: 0 0 auto;">
+    <img src="profile.jpg" alt="Bhrigu Kumar Rajbongshi" style="border-radius: 80%; max-width: 200px;">
+  </div>
+
+</div>
+
+<!-- SECTION: Custom footer with social links -->
+<hr style="margin-top: 3rem;">
+
+<footer style="text-align: center; padding-top: 1rem; font-size: 0.95rem;">
+  <a href="https://linkedin.com/in/YOUR-USERNAME" style="margin: 0 10px;" target="_blank">
+    <i class="bi bi-linkedin"></i> LinkedIn
+  </a>
+  |
+  <a href="https://github.com/YOUR-USERNAME" style="margin: 0 10px;" target="_blank">
+    <i class="bi bi-github"></i> GitHub
+  </a>
+  |
+  <a href="mailto:kumarbhrigu536@gmail.com" style="margin: 0 10px;">
+    <i class="bi bi-envelope"></i> Gmail
+  </a>
+</footer>
+
 ```
