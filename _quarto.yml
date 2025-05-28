@@ -18,7 +18,8 @@ website:
       - href: Resume.qmd
         text: CV
     right:
-      - about.qmd
+      - href: about.qmd
+        text: About
       - icon: github
         href: https://github.com/
       - icon: twitter
