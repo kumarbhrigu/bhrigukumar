@@ -1,17 +1,80 @@
 [
   {
-    "objectID": "portfolio.html",
-    "href": "portfolio.html",
-    "title": "List of projects :",
+    "objectID": "shinyapps.html",
+    "href": "shinyapps.html",
+    "title": "R Shinny apps for my Packages",
     "section": "",
-    "text": "No matching items"
+    "text": "Below are the R packages I have developed or contributed to. These packages address various statistical modeling and data analysis challenges, particularly for longitudinal and survival data.\n\n\n\nDescription:\nAn R package for fitting Generalized Estimating Equations (GEE) with missing data using a combination of Mean Score (MS), Inverse Probability Weighting (IPW), and Multiple Imputation (MI).\n\n📦 CRAN (Coming Soon)\n🔗 GitHub\n📄 Documentation\n\n\n\n\n\nDescription:\nA flexible and scalable joint modeling toolkit for large longitudinal and survival datasets. Supports JMbayes2, rstanarm, joineRML, and FastJM.\n\n🔗 GitHub\n\n\n\n\n\nDescription:\nImplements two-stage joint modeling of longitudinal and survival outcomes for scenarios where traditional joint models may be computationally heavy.\n\n🔗 GitHub\n\n\n\n\n\nDescription:\nDirect estimation approach for joint modeling with longitudinal and time-to-event data using Bayesian and semiparametric techniques.\n\n🔗 GitHub"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to My Academic Website",
+    "objectID": "shinyapps.html#miipw",
+    "href": "shinyapps.html#miipw",
+    "title": "R Shinny apps for my Packages",
     "section": "",
-    "text": "Welcome to My Academic Website\n    Hi! I’m Bhrigu Kumar Rajbongshi, currently a Senior Research Fellow at the Department of Mathematics & Computing, Indian Institute of Technology (IIT) Dhanbad.\n  \n\n  \n    \n  \n\n\n\n\n\n\n\n  \n     LinkedIn\n  \n  |\n  \n     GitHub\n  \n  |\n  \n     Gmail"
+    "text": "Description:\nAn R package for fitting Generalized Estimating Equations (GEE) with missing data using a combination of Mean Score (MS), Inverse Probability Weighting (IPW), and Multiple Imputation (MI).\n\n📦 CRAN (Coming Soon)\n🔗 GitHub\n📄 Documentation"
+  },
+  {
+    "objectID": "shinyapps.html#jmbig",
+    "href": "shinyapps.html#jmbig",
+    "title": "R Shinny apps for my Packages",
+    "section": "",
+    "text": "Description:\nA flexible and scalable joint modeling toolkit for large longitudinal and survival datasets. Supports JMbayes2, rstanarm, joineRML, and FastJM.\n\n🔗 GitHub"
+  },
+  {
+    "objectID": "shinyapps.html#jmtwostage",
+    "href": "shinyapps.html#jmtwostage",
+    "title": "R Shinny apps for my Packages",
+    "section": "",
+    "text": "Description:\nImplements two-stage joint modeling of longitudinal and survival outcomes for scenarios where traditional joint models may be computationally heavy.\n\n🔗 GitHub"
+  },
+  {
+    "objectID": "shinyapps.html#jmbdirect",
+    "href": "shinyapps.html#jmbdirect",
+    "title": "R Shinny apps for my Packages",
+    "section": "",
+    "text": "Description:\nDirect estimation approach for joint modeling with longitudinal and time-to-event data using Bayesian and semiparametric techniques.\n\n🔗 GitHub"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "",
+    "section": "",
+    "text": "Here is list of projects I have completed\n\nR package longit\nR package MIIPW\nR package jmBIG"
+  },
+  {
+    "objectID": "miipw.html",
+    "href": "miipw.html",
+    "title": "MIIPW",
+    "section": "",
+    "text": "Introduction\nThis is a vignette for our package ‘MIIPW’. It contains function for fitting GEE model for repeated measurement data. We have included mainly five function\n\nmeanscore\nsipw\naipw\nmisipw\nmiaipw\nQICmiipw\n\nWe have included a repeated measured gene expression data in our package. Models are fitted to the dataset available in our package as below.\n\nlibrary(MIIPW)\n#&gt; Loading required package: lme4\n#&gt; Loading required package: Matrix\n#&gt; Loading required package: spatstat\n#&gt; Loading required package: spatstat.data\n#&gt; Loading required package: spatstat.geom\n#&gt; spatstat.geom 3.2-8\n#&gt; Loading required package: spatstat.random\n#&gt; spatstat.random 3.2-2\n#&gt; Loading required package: spatstat.explore\n#&gt; Loading required package: nlme\n#&gt; \n#&gt; Attaching package: 'nlme'\n#&gt; The following object is masked from 'package:lme4':\n#&gt; \n#&gt;     lmList\n#&gt; spatstat.explore 3.2-6\n#&gt; Loading required package: spatstat.model\n#&gt; Loading required package: rpart\n#&gt; spatstat.model 3.2-10\n#&gt; Loading required package: spatstat.linnet\n#&gt; spatstat.linnet 3.1-4\n#&gt; \n#&gt; spatstat 3.0-7 \n#&gt; For an introduction to spatstat, type 'beginner'\ndata(\"srdata1\")\nhead(srdata1)\n#&gt;    ID Visit   C6kine ActivinRIB ActivinRIIA ActivinRIIAB Adiponectin     AgRP\n#&gt; 5   2     1 1543.212   589.8966    277.3228     20377.32   10834.171 389.7555\n#&gt; 6   2     2 2130.282   820.4673    390.4100     38432.00   18354.472 560.1543\n#&gt; 7   2     4 1444.763   833.0092    459.7626     16478.16    8141.389 373.6979\n#&gt; 8   2     5 2661.616   860.1184    355.3753     26138.09   21286.228 506.2943\n#&gt; 9   3     1 2064.330   532.0388    435.7554     25176.20    7440.891 605.6970\n#&gt; 10  3     2 2341.346   579.0088    375.4292     24950.24   10418.850 608.5809\n#&gt;       ALCAM\n#&gt; 5  77.70429\n#&gt; 6  63.06272\n#&gt; 7        NA\n#&gt; 8  54.20246\n#&gt; 9  66.67085\n#&gt; 10 71.75843\napply(srdata1,2,anyNA)\n#&gt;           ID        Visit       C6kine   ActivinRIB  ActivinRIIA ActivinRIIAB \n#&gt;        FALSE        FALSE         TRUE         TRUE         TRUE        FALSE \n#&gt;  Adiponectin         AgRP        ALCAM \n#&gt;         TRUE         TRUE         TRUE\nmice::md.pattern(srdata1[,-c(1,2)],plot = TRUE)\n\n\n\n#&gt;     ActivinRIIAB ActivinRIB ActivinRIIA Adiponectin AgRP C6kine ALCAM   \n#&gt; 124            1          1           1           1    1      1     1  0\n#&gt; 8              1          1           1           1    1      1     0  1\n#&gt; 9              1          1           1           1    1      0     1  1\n#&gt; 1              1          1           1           1    1      0     0  2\n#&gt; 5              1          1           1           1    0      1     1  1\n#&gt; 6              1          1           1           0    1      1     1  1\n#&gt; 1              1          1           1           0    1      1     0  2\n#&gt; 1              1          1           1           0    0      1     1  2\n#&gt; 4              1          1           0           1    1      1     1  1\n#&gt; 1              1          1           0           1    0      1     1  2\n#&gt; 1              1          1           0           0    0      1     1  3\n#&gt; 2              1          0           1           1    1      1     1  1\n#&gt; 1              1          0           0           1    0      1     1  3\n#&gt;                0          3           7           9    9     10    10 48\n\n\n\nMeanscore method\nHere we have considered the response model for C6kine, depending on the other covariates in dataset srdata1. Formula object below defines the model struture. Imputation model for the methods described in can be specified through the predictor matrix function available in mice package.\n\nformula&lt;-C6kine~ActivinRIB+ActivinRIIA+ActivinRIIAB+Adiponectin+AgRP+ALCAM\npMat&lt;-mice::make.predictorMatrix(srdata1[names(srdata1)%in%all.vars(formula)])\nm1&lt;-MeanScore(data=srdata1,\n              formula&lt;-formula,id='ID',\n              visit='Visit',family='gaussian',init.beta = NULL,\n              init.alpha=NULL,init.phi=1,tol=.00001,weights = NULL,\n              corstr = 'exchangeable',maxit=50,m=2,pMat=pMat)\nsummary_meanscore(m1)\n#&gt; $call\n#&gt; MeanScore(data = srdata1, formula = formula &lt;- formula, id = \"ID\", \n#&gt;     visit = \"Visit\", family = \"gaussian\", init.beta = NULL, init.alpha = NULL, \n#&gt;     init.phi = 1, tol = 1e-05, weights = NULL, corstr = \"exchangeable\", \n#&gt;     maxit = 50, m = 2, pMat = pMat)\n#&gt; \n#&gt; $inference\n#&gt;      Estimates           SE    z value   Pr(&gt;|z|)\n#&gt; 1 775.79380607 236.36042943  3.2822491 0.00102983\n#&gt; 2   0.42715972   0.43771673  0.9758816 0.32912312\n#&gt; 3   0.07419993   0.66510669  0.1115610 0.91117154\n#&gt; 4   0.05023713   0.01022565  4.9128525 0.00000090\n#&gt; 5  -0.02578143   0.01323035 -1.9486588 0.05133618\n#&gt; 6   0.19246309   0.33887288  0.5679507 0.57006845\n#&gt; 7  -1.45606357   0.50121209 -2.9050847 0.00367154\n#&gt; \n#&gt; $phi\n#&gt; [1] 332950.4\n#&gt; \n#&gt; $Ralpha\n#&gt;            [,1]       [,2]       [,3]       [,4]\n#&gt; [1,]  1.0000000 -0.1010352 -0.1010352 -0.1010352\n#&gt; [2,] -0.1010352  1.0000000 -0.1010352 -0.1010352\n#&gt; [3,] -0.1010352 -0.1010352  1.0000000 -0.1010352\n#&gt; [4,] -0.1010352 -0.1010352 -0.1010352  1.0000000\n#&gt; \n#&gt; attr(,\"class\")\n#&gt; [1] \"summary_meanscore\"\n\nThe summary_meanscore() and summary_ipw() summarises the results from fitted object obtained from meanscore and ipw functions. It provides the list of parameter estimates, wald statistics, p-value, phi value.\n\n\nSIPW, AIPW, miSIPW, miAIPW\nThe inverse probability weighted method can be used through the function . Similarly we need to specify a predictor matrix for the imputation of score fucntion missing due to incomplete data. The argument takes the predictor matrix to be used in inside the function. The demo code for this model as follows :\n\nm2&lt;-SIPW(data=srdata1,formula&lt;-formula,id='ID',\n       visit='Visit',family='gaussian',corstr = 'exchangeable',maxit=5)\n\nm3&lt;-AIPW(data=srdata1,\n       formula&lt;-formula,id='ID',\n       visit='Visit',family='gaussian',init.beta = NULL,\n       init.alpha=NULL,init.phi=1,tol=.00001,weights = NULL,\n       corstr = 'exchangeable',maxit=50,m=3,pMat=pMat)\n\nm4&lt;-miSIPW(data=srdata1,\n         formula&lt;-formula,id='ID',\n         visit='Visit',family='gaussian',init.beta = NULL,\n         init.alpha=NULL,init.phi=1,tol=0.001,weights = NULL,\n         corstr = 'exchangeable',maxit=50,m=2,pMat=pMat)\n\nm1&lt;-miAIPW(data=srdata1,\n         formula&lt;-formula,id='ID',\n         visit='Visit',family='gaussian',init.beta = NULL,\n         init.alpha=NULL,init.phi=1,tol=.00001,weights = NULL,\n         corstr = 'exchangeable',maxit=4,m=2,pMat=pMat)\n\n\n\nModel Selection Crietrion QIC\nThe function provides the list of various model selection criterion based on quasi liklihood. The demo code is as follows\n\nm1&lt;-MeanScore(data=srdata1,\n              formula&lt;-formula,id='ID',\n              visit='Visit',family='gaussian',init.beta = NULL,\n              init.alpha=NULL,init.phi=1,tol=.00001,weights = NULL,\n              corstr = 'exchangeable',maxit=50,m=2,pMat=pMat)\nm11&lt;-MeanScore(data=srdata1,\n               formula&lt;-formula,id='ID',\n               visit='Visit',family='gaussian',init.beta = NULL,\n               init.alpha=NULL,init.phi=1,tol=.00001,weights = NULL,\n               corstr = 'independent',maxit=50,m=2,pMat=pMat)\nQICmiipw(model.R=m1,model.indep=m11,family=\"gaussian\")\n#&gt;       QIC      QICu Quasi Lik \n#&gt;   169.558   485.000   -78.500\n##"
+  },
+  {
+    "objectID": "blogs.html",
+    "href": "blogs.html",
+    "title": "Blogs",
+    "section": "",
+    "text": "Welcome to my blog space! Here I share my thoughts on statistics, R programming, academic tools, and data science topics.\n\n\n\nDate: April 12, 2024\nSummary:\nInverse Probability Weighting (IPW) is a powerful method for handling missing data and selection bias in observational studies. In this post, I explain the intuition behind IPW and provide an example using R.\nRead More ›\n\n\n\n\nDate: March 18, 2024\nSummary:\nEver wondered how to create your own R package? This blog post walks you through the essentials of setting up a package structure, writing functions, documentation, and publishing to CRAN.\nRead More ›\n\n\n\n\nDate: February 5, 2024\nSummary:\nJoint models are used to analyze the relationship between longitudinal and survival outcomes. This article introduces joint modeling, its use cases, and demonstrates an application using JMbayes2.\nRead More ›"
+  },
+  {
+    "objectID": "blogs.html#understanding-inverse-probability-weighting-ipw",
+    "href": "blogs.html#understanding-inverse-probability-weighting-ipw",
+    "title": "Blogs",
+    "section": "",
+    "text": "Date: April 12, 2024\nSummary:\nInverse Probability Weighting (IPW) is a powerful method for handling missing data and selection bias in observational studies. In this post, I explain the intuition behind IPW and provide an example using R.\nRead More ›"
+  },
+  {
+    "objectID": "blogs.html#building-an-r-package-from-concept-to-cran",
+    "href": "blogs.html#building-an-r-package-from-concept-to-cran",
+    "title": "Blogs",
+    "section": "",
+    "text": "Date: March 18, 2024\nSummary:\nEver wondered how to create your own R package? This blog post walks you through the essentials of setting up a package structure, writing functions, documentation, and publishing to CRAN.\nRead More ›"
+  },
+  {
+    "objectID": "blogs.html#joint-models-in-survival-analysis",
+    "href": "blogs.html#joint-models-in-survival-analysis",
+    "title": "Blogs",
+    "section": "",
+    "text": "Date: February 5, 2024\nSummary:\nJoint models are used to analyze the relationship between longitudinal and survival outcomes. This article introduces joint modeling, its use cases, and demonstrates an application using JMbayes2.\nRead More ›"
   },
   {
     "objectID": "about.html",
@@ -21,17 +84,87 @@
     "text": "Senior Research Fellow\nDepartment of Mathematics & Computing\nIndian Institute of Technology (Dhanbad)"
   },
   {
-    "objectID": "miipw.html",
-    "href": "miipw.html",
-    "title": "MIIPW",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Academic Website",
     "section": "",
-    "text": "Introduction\nThis is a vignette for our package ‘MIIPW’. It contains function for fitting GEE model for repeated measurement data. We have included mainly five function\n\nmeanscore\nsipw\naipw\nmisipw\nmiaipw\nQICmiipw\n\nWe have included a repeated measured gene expression data in our package. Models are fitted to the dataset available in our package as below.\n\nlibrary(MIIPW)\n#&gt; Loading required package: lme4\n#&gt; Loading required package: Matrix\n#&gt; Loading required package: spatstat\n#&gt; Loading required package: spatstat.data\n#&gt; Loading required package: spatstat.geom\n#&gt; spatstat.geom 3.2-8\n#&gt; Loading required package: spatstat.random\n#&gt; spatstat.random 3.2-2\n#&gt; Loading required package: spatstat.explore\n#&gt; Loading required package: nlme\n#&gt; \n#&gt; Attaching package: 'nlme'\n#&gt; The following object is masked from 'package:lme4':\n#&gt; \n#&gt;     lmList\n#&gt; spatstat.explore 3.2-6\n#&gt; Loading required package: spatstat.model\n#&gt; Loading required package: rpart\n#&gt; spatstat.model 3.2-10\n#&gt; Loading required package: spatstat.linnet\n#&gt; spatstat.linnet 3.1-4\n#&gt; \n#&gt; spatstat 3.0-7 \n#&gt; For an introduction to spatstat, type 'beginner'\ndata(\"srdata1\")\nhead(srdata1)\n#&gt;    ID Visit   C6kine ActivinRIB ActivinRIIA ActivinRIIAB Adiponectin     AgRP\n#&gt; 5   2     1 1543.212   589.8966    277.3228     20377.32   10834.171 389.7555\n#&gt; 6   2     2 2130.282   820.4673    390.4100     38432.00   18354.472 560.1543\n#&gt; 7   2     4 1444.763   833.0092    459.7626     16478.16    8141.389 373.6979\n#&gt; 8   2     5 2661.616   860.1184    355.3753     26138.09   21286.228 506.2943\n#&gt; 9   3     1 2064.330   532.0388    435.7554     25176.20    7440.891 605.6970\n#&gt; 10  3     2 2341.346   579.0088    375.4292     24950.24   10418.850 608.5809\n#&gt;       ALCAM\n#&gt; 5  77.70429\n#&gt; 6  63.06272\n#&gt; 7        NA\n#&gt; 8  54.20246\n#&gt; 9  66.67085\n#&gt; 10 71.75843\napply(srdata1,2,anyNA)\n#&gt;           ID        Visit       C6kine   ActivinRIB  ActivinRIIA ActivinRIIAB \n#&gt;        FALSE        FALSE         TRUE         TRUE         TRUE        FALSE \n#&gt;  Adiponectin         AgRP        ALCAM \n#&gt;         TRUE         TRUE         TRUE\nmice::md.pattern(srdata1[,-c(1,2)],plot = TRUE)\n\n\n\n#&gt;     ActivinRIIAB ActivinRIB ActivinRIIA Adiponectin AgRP C6kine ALCAM   \n#&gt; 124            1          1           1           1    1      1     1  0\n#&gt; 8              1          1           1           1    1      1     0  1\n#&gt; 9              1          1           1           1    1      0     1  1\n#&gt; 1              1          1           1           1    1      0     0  2\n#&gt; 5              1          1           1           1    0      1     1  1\n#&gt; 6              1          1           1           0    1      1     1  1\n#&gt; 1              1          1           1           0    1      1     0  2\n#&gt; 1              1          1           1           0    0      1     1  2\n#&gt; 4              1          1           0           1    1      1     1  1\n#&gt; 1              1          1           0           1    0      1     1  2\n#&gt; 1              1          1           0           0    0      1     1  3\n#&gt; 2              1          0           1           1    1      1     1  1\n#&gt; 1              1          0           0           1    0      1     1  3\n#&gt;                0          3           7           9    9     10    10 48\n\n\n\nMeanscore method\nHere we have considered the response model for C6kine, depending on the other covariates in dataset srdata1. Formula object below defines the model struture. Imputation model for the methods described in can be specified through the predictor matrix function available in mice package.\n\nformula&lt;-C6kine~ActivinRIB+ActivinRIIA+ActivinRIIAB+Adiponectin+AgRP+ALCAM\npMat&lt;-mice::make.predictorMatrix(srdata1[names(srdata1)%in%all.vars(formula)])\nm1&lt;-MeanScore(data=srdata1,\n              formula&lt;-formula,id='ID',\n              visit='Visit',family='gaussian',init.beta = NULL,\n              init.alpha=NULL,init.phi=1,tol=.00001,weights = NULL,\n              corstr = 'exchangeable',maxit=50,m=2,pMat=pMat)\nsummary_meanscore(m1)\n#&gt; $call\n#&gt; MeanScore(data = srdata1, formula = formula &lt;- formula, id = \"ID\", \n#&gt;     visit = \"Visit\", family = \"gaussian\", init.beta = NULL, init.alpha = NULL, \n#&gt;     init.phi = 1, tol = 1e-05, weights = NULL, corstr = \"exchangeable\", \n#&gt;     maxit = 50, m = 2, pMat = pMat)\n#&gt; \n#&gt; $inference\n#&gt;       Estimates           SE     z value   Pr(&gt;|z|)\n#&gt; 1 780.490980061 2.259761e+02  3.45386503 0.00055261\n#&gt; 2   0.436690027 4.430064e-01  0.98574199 0.32425974\n#&gt; 3   0.188158289 6.256154e-01  0.30075713 0.76359970\n#&gt; 4   0.049517405 9.936483e-03  4.98339352 0.00000062\n#&gt; 5  -0.023524142 1.246734e-02 -1.88686138 0.05917897\n#&gt; 6   0.003598231 2.948062e-01  0.01220541 0.99026173\n#&gt; 7  -1.300341038 4.817005e-01 -2.69948025 0.00694479\n#&gt; \n#&gt; $phi\n#&gt; [1] 319447.7\n#&gt; \n#&gt; $Ralpha\n#&gt;            [,1]       [,2]       [,3]       [,4]\n#&gt; [1,]  1.0000000 -0.1056606 -0.1056606 -0.1056606\n#&gt; [2,] -0.1056606  1.0000000 -0.1056606 -0.1056606\n#&gt; [3,] -0.1056606 -0.1056606  1.0000000 -0.1056606\n#&gt; [4,] -0.1056606 -0.1056606 -0.1056606  1.0000000\n#&gt; \n#&gt; attr(,\"class\")\n#&gt; [1] \"summary_meanscore\"\n\nThe summary_meanscore() and summary_ipw() summarises the results from fitted object obtained from meanscore and ipw functions. It provides the list of parameter estimates, wald statistics, p-value, phi value.\n\n\nSIPW, AIPW, miSIPW, miAIPW\nThe inverse probability weighted method can be used through the function . Similarly we need to specify a predictor matrix for the imputation of score fucntion missing due to incomplete data. The argument takes the predictor matrix to be used in inside the function. The demo code for this model as follows :\n\nm2&lt;-SIPW(data=srdata1,formula&lt;-formula,id='ID',\n       visit='Visit',family='gaussian',corstr = 'exchangeable',maxit=5)\n\nm3&lt;-AIPW(data=srdata1,\n       formula&lt;-formula,id='ID',\n       visit='Visit',family='gaussian',init.beta = NULL,\n       init.alpha=NULL,init.phi=1,tol=.00001,weights = NULL,\n       corstr = 'exchangeable',maxit=50,m=3,pMat=pMat)\n\nm4&lt;-miSIPW(data=srdata1,\n         formula&lt;-formula,id='ID',\n         visit='Visit',family='gaussian',init.beta = NULL,\n         init.alpha=NULL,init.phi=1,tol=0.001,weights = NULL,\n         corstr = 'exchangeable',maxit=50,m=2,pMat=pMat)\n\nm1&lt;-miAIPW(data=srdata1,\n         formula&lt;-formula,id='ID',\n         visit='Visit',family='gaussian',init.beta = NULL,\n         init.alpha=NULL,init.phi=1,tol=.00001,weights = NULL,\n         corstr = 'exchangeable',maxit=4,m=2,pMat=pMat)\n\n\n\nModel Selection Crietrion QIC\nThe function provides the list of various model selection criterion based on quasi liklihood. The demo code is as follows\n\nm1&lt;-MeanScore(data=srdata1,\n              formula&lt;-formula,id='ID',\n              visit='Visit',family='gaussian',init.beta = NULL,\n              init.alpha=NULL,init.phi=1,tol=.00001,weights = NULL,\n              corstr = 'exchangeable',maxit=50,m=2,pMat=pMat)\nm11&lt;-MeanScore(data=srdata1,\n               formula&lt;-formula,id='ID',\n               visit='Visit',family='gaussian',init.beta = NULL,\n               init.alpha=NULL,init.phi=1,tol=.00001,weights = NULL,\n               corstr = 'independent',maxit=50,m=2,pMat=pMat)\nQICmiipw(model.R=m1,model.indep=m11,family=\"gaussian\")\n#&gt;       QIC      QICu Quasi Lik \n#&gt;  168.7509  485.0000  -78.5000\n##"
+    "text": "Welcome to My Academic Website\n    Hi! I’m Bhrigu Kumar Rajbongshi, currently a Senior Research Fellow at the Department of Mathematics & Computing, Indian Institute of Technology (IIT) Dhanbad.\n  \n\n  \n  \n\n\n\n\n\n\n\n\n  \n     LinkedIn\n  \n  |\n  \n     GitHub\n  \n  |\n  \n     Gmail"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "",
+    "objectID": "portfolio.html",
+    "href": "portfolio.html",
+    "title": "List of projects :",
     "section": "",
-    "text": "Here is list of projects I have completed\n\nR package longit\nR package MIIPW\nR package jmBIG"
+    "text": "No matching items"
+  },
+  {
+    "objectID": "publication.html",
+    "href": "publication.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Below is a list of my selected academic publications and working papers. You can filter or browse by category.\n\n\n\n\n\nAuthors: Bhrigu Kumar Rajbongshi, Atanu Bhattacharjee, Gajendra K Vishwakarma\nJournal: Journal of Statistical Software (Under Review)\nAbstract: This paper introduces the MIIPW R package for robust longitudinal data analysis with missing data using mean score, IPW, and MI strategies.\n🔗 GitHub | 📄 Manuscript (PDF)\n\n\n\n\nAuthors: Bhrigu Kumar Rajbongshi, Atanu Bhattacharjee\nJournal: Computational Statistics & Data Analysis (Submitted)\n🔗 GitHub | 📄 Preprint\n\n\n\n\n\n\n\nAuthors: Bhrigu Kumar Rajbongshi, Atanu Bhattacharjee\nStatus: In Preparation\n📦 Package: jmbdirect\n\n\n\n\n\n\n\nConference: RSS International Conference 2024\nLocation: Harrogate, UK\nFormat: Poster Presentation\n📽️ View Poster (PDF)\n🔗 GitHub Project\n🌐 Live Slides\n\n\n\n\nConference: ISPSDA 2023\nLocation: IIT Guwahati\nFormat: Invited Talk\n📽️ Slides (Quarto RevealJS)\n🔗 GitHub Repository\n\n\n\n\nConference: Young Statisticians Meet 2023\nLocation: Online\n📽️ Watch Presentation\n🔗 GitHub Repo\n\n\n\n\n\nResearchgate\n\nView Google Scholar Profile"
+  },
+  {
+    "objectID": "publication.html#journal-articles",
+    "href": "publication.html#journal-articles",
+    "title": "Publications",
+    "section": "",
+    "text": "Authors: Bhrigu Kumar Rajbongshi, Atanu Bhattacharjee, Gajendra K Vishwakarma\nJournal: Journal of Statistical Software (Under Review)\nAbstract: This paper introduces the MIIPW R package for robust longitudinal data analysis with missing data using mean score, IPW, and MI strategies.\n🔗 GitHub | 📄 Manuscript (PDF)\n\n\n\n\nAuthors: Bhrigu Kumar Rajbongshi, Atanu Bhattacharjee\nJournal: Computational Statistics & Data Analysis (Submitted)\n🔗 GitHub | 📄 Preprint"
+  },
+  {
+    "objectID": "publication.html#working-papers",
+    "href": "publication.html#working-papers",
+    "title": "Publications",
+    "section": "",
+    "text": "Authors: Bhrigu Kumar Rajbongshi, Atanu Bhattacharjee\nStatus: In Preparation\n📦 Package: jmbdirect"
+  },
+  {
+    "objectID": "publication.html#conference-presentations",
+    "href": "publication.html#conference-presentations",
+    "title": "Publications",
+    "section": "",
+    "text": "Conference: RSS International Conference 2024\nLocation: Harrogate, UK\nFormat: Poster Presentation\n📽️ View Poster (PDF)\n🔗 GitHub Project\n🌐 Live Slides\n\n\n\n\nConference: ISPSDA 2023\nLocation: IIT Guwahati\nFormat: Invited Talk\n📽️ Slides (Quarto RevealJS)\n🔗 GitHub Repository\n\n\n\n\nConference: Young Statisticians Meet 2023\nLocation: Online\n📽️ Watch Presentation\n🔗 GitHub Repo"
+  },
+  {
+    "objectID": "publication.html#my-links",
+    "href": "publication.html#my-links",
+    "title": "Publications",
+    "section": "",
+    "text": "Researchgate\n\nView Google Scholar Profile"
+  },
+  {
+    "objectID": "rpackages.html",
+    "href": "rpackages.html",
+    "title": "R Packages",
+    "section": "",
+    "text": "Below are the R packages I have developed or contributed to. These packages address various statistical modeling and data analysis challenges, particularly for longitudinal and survival data.\n\n\n\nDescription:\nAn R package for fitting Generalized Estimating Equations (GEE) with missing data using a combination of Mean Score (MS), Inverse Probability Weighting (IPW), and Multiple Imputation (MI).\n\n📦 CRAN (Coming Soon)\n🔗 GitHub\n📄 Documentation\n\n\n\n\n\nDescription:\nA flexible and scalable joint modeling toolkit for large longitudinal and survival datasets. Supports JMbayes2, rstanarm, joineRML, and FastJM.\n\n🔗 GitHub\n\n\n\n\n\nDescription:\nImplements two-stage joint modeling of longitudinal and survival outcomes for scenarios where traditional joint models may be computationally heavy.\n\n🔗 GitHub\n\n\n\n\n\nDescription:\nDirect estimation approach for joint modeling with longitudinal and time-to-event data using Bayesian and semiparametric techniques.\n\n🔗 GitHub"
+  },
+  {
+    "objectID": "rpackages.html#miipw",
+    "href": "rpackages.html#miipw",
+    "title": "R Packages",
+    "section": "",
+    "text": "Description:\nAn R package for fitting Generalized Estimating Equations (GEE) with missing data using a combination of Mean Score (MS), Inverse Probability Weighting (IPW), and Multiple Imputation (MI).\n\n📦 CRAN (Coming Soon)\n🔗 GitHub\n📄 Documentation"
+  },
+  {
+    "objectID": "rpackages.html#jmbig",
+    "href": "rpackages.html#jmbig",
+    "title": "R Packages",
+    "section": "",
+    "text": "Description:\nA flexible and scalable joint modeling toolkit for large longitudinal and survival datasets. Supports JMbayes2, rstanarm, joineRML, and FastJM.\n\n🔗 GitHub"
+  },
+  {
+    "objectID": "rpackages.html#jmtwostage",
+    "href": "rpackages.html#jmtwostage",
+    "title": "R Packages",
+    "section": "",
+    "text": "Description:\nImplements two-stage joint modeling of longitudinal and survival outcomes for scenarios where traditional joint models may be computationally heavy.\n\n🔗 GitHub"
+  },
+  {
+    "objectID": "rpackages.html#jmbdirect",
+    "href": "rpackages.html#jmbdirect",
+    "title": "R Packages",
+    "section": "",
+    "text": "Description:\nDirect estimation approach for joint modeling with longitudinal and time-to-event data using Bayesian and semiparametric techniques.\n\n🔗 GitHub"
   }
 ]

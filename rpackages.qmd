@@ -1,0 +1,47 @@
+
+---
+title: "R Packages"
+format: html
+---
+
+# 📦 My R Packages
+
+Below are the R packages I have developed or contributed to. These packages address various statistical modeling and data analysis challenges, particularly for longitudinal and survival data.
+
+---
+
+## 🔹 MIIPW
+
+**Description:**  
+An R package for fitting Generalized Estimating Equations (GEE) with missing data using a combination of Mean Score (MS), Inverse Probability Weighting (IPW), and Multiple Imputation (MI).
+
+- 📦 [CRAN (Coming Soon)]()
+- 🔗 [GitHub](https://github.com/yourusername/MIIPW)
+- 📄 [Documentation](https://yourusername.github.io/MIIPW)
+
+---
+
+## 🔹 jmBIG
+
+**Description:**  
+A flexible and scalable joint modeling toolkit for large longitudinal and survival datasets. Supports `JMbayes2`, `rstanarm`, `joineRML`, and `FastJM`.
+
+- 🔗 [GitHub](https://github.com/yourusername/jmBIG)
+
+---
+
+## 🔹 jmtwostage
+
+**Description:**  
+Implements two-stage joint modeling of longitudinal and survival outcomes for scenarios where traditional joint models may be computationally heavy.
+
+- 🔗 [GitHub](https://github.com/yourusername/jmtwostage)
+
+---
+
+## 🔹 jmbdirect
+
+**Description:**  
+Direct estimation approach for joint modeling with longitudinal and time-to-event data using Bayesian and semiparametric techniques.
+
+- 🔗 [GitHub](https://github.com/yourusername/jmbdirect)

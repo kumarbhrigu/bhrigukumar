@@ -1,0 +1,38 @@
+---
+title: "Blogs"
+format: html
+---
+
+# 📝 My Blogs
+
+Welcome to my blog space! Here I share my thoughts on statistics, R programming, academic tools, and data science topics.
+
+---
+
+## 📊 Understanding Inverse Probability Weighting (IPW)
+
+**Date:** April 12, 2024  
+**Summary:**  
+Inverse Probability Weighting (IPW) is a powerful method for handling missing data and selection bias in observational studies. In this post, I explain the intuition behind IPW and provide an example using R.
+
+**[Read More ›](blogs/ipw-method.qmd)**
+
+---
+
+## 📦 Building an R Package: From Concept to CRAN
+
+**Date:** March 18, 2024  
+**Summary:**  
+Ever wondered how to create your own R package? This blog post walks you through the essentials of setting up a package structure, writing functions, documentation, and publishing to CRAN.
+
+**[Read More ›](blogs/building-r-package.qmd)**
+
+---
+
+## 🧠 Joint Models in Survival Analysis
+
+**Date:** February 5, 2024  
+**Summary:**  
+Joint models are used to analyze the relationship between longitudinal and survival outcomes. This article introduces joint modeling, its use cases, and demonstrates an application using `JMbayes2`.
+
+**[Read More ›](blogs/joint-models.qmd)**

@@ -7,14 +7,16 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: blogs.qmd
+        text: Blogs
+      - href: publication.qmd
+        text: Publications
+      - href: rpackages.qmd
+        text: R Packages
+      - href: shinyapps.qmd
+        text: Shiny Apps
       - href: Resume.qmd
         text: CV
-      - href: miipw.qmd
-        text: miipw
-      - href: portfolio.qmd
-        text: portfolio
-      - href: projects.qmd
-        text: projects
     right:
       - about.qmd
       - icon: github

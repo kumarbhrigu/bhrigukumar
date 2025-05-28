@@ -1,0 +1,69 @@
+---
+title: "Publications"
+format: html
+---
+
+# 📚 Publications
+
+Below is a list of my selected academic publications and working papers. You can filter or browse by category.
+
+---
+
+## 📝 Journal Articles
+
+### **1. MIIPW: An R package for GEE with missing data using MI and IPW**
+**Authors:** Bhrigu Kumar Rajbongshi, Atanu Bhattacharjee, Gajendra K Vishwakarma  
+**Journal:** *Journal of Statistical Software* (Under Review)  
+**Abstract:** This paper introduces the MIIPW R package for robust longitudinal data analysis with missing data using mean score, IPW, and MI strategies.  
+🔗 [GitHub](https://github.com/yourusername/MIIPW) | 📄 [Manuscript (PDF)](files/miipw-paper.pdf)
+
+---
+
+### **2. Joint Modeling for Big Data using jmBIG**
+**Authors:** Bhrigu Kumar Rajbongshi, Atanu Bhattacharjee  
+**Journal:** *Computational Statistics & Data Analysis* (Submitted)  
+🔗 [GitHub](https://github.com/yourusername/jmBIG) | 📄 [Preprint](https://arxiv.org/abs/xxxxx)
+
+---
+
+## 🧪 Working Papers
+
+### **1. Direct Bayesian Estimation for Joint Models**
+**Authors:** Bhrigu Kumar Rajbongshi, Atanu Bhattacharjee  
+**Status:** In Preparation  
+📦 Package: [`jmbdirect`](https://github.com/yourusername/jmbdirect)
+
+---
+
+## 🎤 Conference Presentations
+
+### “MIIPW: Generalized Estimating Equations with Missing Data”
+**Conference:** RSS International Conference 2024  
+**Location:** Harrogate, UK  
+**Format:** Poster Presentation  
+📽️ [View Poster (PDF)](files/miipw_poster.pdf)  
+🔗 [GitHub Project](https://github.com/yourusername/MIIPW)  
+🌐 [Live Slides](https://yourusername.github.io/MIIPW/presentation.html)
+
+---
+
+### “Joint Modeling for Big Data”
+**Conference:** ISPSDA 2023  
+**Location:** IIT Guwahati  
+**Format:** Invited Talk  
+📽️ [Slides (Quarto RevealJS)](https://yourusername.github.io/jmBIG/talk.html)  
+🔗 [GitHub Repository](https://github.com/yourusername/jmBIG)
+
+---
+
+### “Bayesian Estimation in Joint Models”
+**Conference:** Young Statisticians Meet 2023  
+**Location:** Online  
+📽️ [Watch Presentation](https://yourusername.github.io/jmbdirect/presentation.html)  
+🔗 [GitHub Repo](https://github.com/yourusername/jmbdirect)
+
+## 📄 my links
+
+- [Researchgate](https://www.researchgate.net/profile/Bhrigu-Rajbongshi?ev=hdr_xprf)  
+- [View Google Scholar Profile](https://scholar.google.com/citations?user=XtQEXSUAAAAJ&hl=en)
+
