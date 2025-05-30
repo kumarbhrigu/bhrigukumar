@@ -1,0 +1,58 @@
+---
+title: "lmeIPW"
+format: html
+---
+
+
+# 📢 Introduction to the **lmeIPW** Shiny App
+
+The **MIIPW** R package provides robust tools for analyzing **repeated measurement data** using a **semiparametric marginal modeling** framework. This is particularly useful when data contains **missing values** in the **response** and/or **covariates**.
+
+The methodology integrates **Fisher Scoring** estimation with:
+- **Mean Score (MS)** method
+- **Inverse Probability Weighting (IPW)**
+- **Multiple Imputation (MI)**
+
+These approaches provide a flexible way to handle missing data scenarios, ensuring more accurate and reliable statistical inference in longitudinal data analysis.
+
+---
+
+## 🔧 Core Functions Demonstrated in the App
+
+### 1. `lmeaipw()`
+A function specifically designed for analyzing longitudinal data where the **response variable has missing values**. It uses semiparametric marginal models combined with **IPW and MI** methods.
+
+> ⚠️ **Note**: This function should not be used if your dataset has **no missing values**.
+
+---
+
+### 2. `lmeipw()`
+Another function for semiparametric modeling in the presence of **missing values in the response**. Like `lmeaipw()`, this function is developed for **continuous response** data and integrates both **IPW** and **multiple imputation** in the estimation process.
+
+> ⚠️ **Note**: Avoid using this function if your data is complete (i.e., contains no missing values).
+
+---
+
+### 3. `lmemeanscore()`
+This function implements the **Mean Score method** for marginal models when the **response variable has missing values**. It is particularly effective when used in conjunction with imputation techniques.
+
+> ⚠️ **Note**: This function is also not appropriate if your dataset has no missing data.
+
+---
+
+## 📦 Key Features
+
+- Handles **longitudinal data** with **missing values** in both response and covariates
+- Supports **continuous outcomes** (extensions for other types of outcomes coming soon)
+- Applies separate **mixed-effects models** for:
+  - Imputation
+  - Inverse Probability Weighting
+- Suitable for use in medical, epidemiological, and health sciences research where **incomplete data** is common
+
+---
+
+## 📚 For More Information
+
+For further reading on the **Mean Score** and **Inverse Probability Weighted** methods, please refer to the documentation and associated research articles included with the `MIIPW` package.
+
+---
