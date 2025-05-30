@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R Shinny apps for my Packages</title>
+<title>R Shiny app</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -132,13 +132,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#my-r-packages" id="toc-my-r-packages" class="nav-link active" data-scroll-target="#my-r-packages">📦 My R Packages</a>
-  <ul class="collapse">
-  <li><a href="#miipw" id="toc-miipw" class="nav-link" data-scroll-target="#miipw">🔹 MIIPW</a></li>
-  <li><a href="#jmbig" id="toc-jmbig" class="nav-link" data-scroll-target="#jmbig">🔹 jmBIG</a></li>
-  <li><a href="#jmtwostage" id="toc-jmtwostage" class="nav-link" data-scroll-target="#jmtwostage">🔹 jmtwostage</a></li>
-  <li><a href="#jmbdirect" id="toc-jmbdirect" class="nav-link" data-scroll-target="#jmbdirect">🔹 jmbdirect</a></li>
-  </ul></li>
+  <li><a href="#shiny-app-for-r-package-jmbig" id="toc-shiny-app-for-r-package-jmbig" class="nav-link active" data-scroll-target="#shiny-app-for-r-package-jmbig">Shiny app for r package jmBIG</a></li>
+  <li><a href="#lmeipw" id="toc-lmeipw" class="nav-link" data-scroll-target="#lmeipw">🔹 lmeIPW</a></li>
+  <li><a href="#dscoremsm" id="toc-dscoremsm" class="nav-link" data-scroll-target="#dscoremsm">🔹 dscoreMSM</a></li>
   </ul>
 </nav>
     </div>
@@ -147,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">R Shinny apps for my Packages</h1>
+<h1 class="title">R Shiny app</h1>
 </div>
 
 
@@ -162,49 +158,40 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="my-r-packages" class="level1">
-<h1>📦 My R Packages</h1>
-<p>Below are the R packages I have developed or contributed to. These packages address various statistical modeling and data analysis challenges, particularly for longitudinal and survival data.</p>
+<p>Below are the R shiny app I have developed. These apps are related to packages developed for various statistical modeling and data analysis challenges, particularly for longitudinal and survival data.</p>
 <hr>
-<section id="miipw" class="level2">
-<h2 class="anchored" data-anchor-id="miipw">🔹 MIIPW</h2>
-<p><strong>Description:</strong><br>
-An R package for fitting Generalized Estimating Equations (GEE) with missing data using a combination of Mean Score (MS), Inverse Probability Weighting (IPW), and Multiple Imputation (MI).</p>
+<section id="shiny-app-for-r-package-jmbig" class="level2">
+<h2 class="anchored" data-anchor-id="shiny-app-for-r-package-jmbig">Shiny app for r package jmBIG</h2>
+<p><strong>Date:</strong> April 12, 2024<br>
+<strong>Summary:</strong><br>
+The <strong>jmBIG</strong> Shiny app provides powerful analytical tools tailored for <strong>BIG data</strong>, where the number of observations (rows) is extremely large. It enables users to perform <strong>joint modeling</strong> of longitudinal</p>
+<p><strong><a href="./blogs/jmBIGshinny.html">Read More ›</a></strong></p>
+<hr>
+</section>
+<section id="lmeipw" class="level2">
+<h2 class="anchored" data-anchor-id="lmeipw">🔹 lmeIPW</h2>
+<p><strong>Date:</strong> April 13, 2024<br>
+<strong>Summary:</strong><br>
+The <strong>MIIPW</strong> R package provides robust tools for analyzing <strong>repeated measurement data</strong> using a <strong>semiparametric marginal modeling</strong> framework.</p>
+<p><strong><a href="./blogs/lmeIPW.html">Read More ›</a></strong></p>
 <ul>
-<li>📦 <a href="">CRAN (Coming Soon)</a></li>
-<li>🔗 <a href="https://github.com/yourusername/MIIPW">GitHub</a></li>
-<li>📄 <a href="https://yourusername.github.io/MIIPW">Documentation</a></li>
+<li>📦 <a href="https://cran.r-project.org/web/packages/MIIPW/index.html">CRAN</a></li>
+<li>🔗 <a href="https://github.com/kumarbhrigu/MIIPW">GitHub</a></li>
+<li>🔗 <a href="https://bhrigukr.shinyapps.io/lmemiipw/">Explore the app here</a></li>
+<li>📄 <a href="https://kumarbhrigu.github.io/MIIPW/">Documentation</a></li>
 </ul>
 <hr>
 </section>
-<section id="jmbig" class="level2">
-<h2 class="anchored" data-anchor-id="jmbig">🔹 jmBIG</h2>
+<section id="dscoremsm" class="level2">
+<h2 class="anchored" data-anchor-id="dscoremsm">🔹 dscoreMSM</h2>
 <p><strong>Description:</strong><br>
-A flexible and scalable joint modeling toolkit for large longitudinal and survival datasets. Supports <code>JMbayes2</code>, <code>rstanarm</code>, <code>joineRML</code>, and <code>FastJM</code>.</p>
+This is the R Shiny app for our R package dscoreMSM. Our package includes various functions required for our proposed method named Survival Proximity Score Matching to handle doubtful censored cases in a multistate survival model. The hazard function for different transitions follows a CoxPH model with a transition-specific frailty term</p>
 <ul>
-<li>🔗 <a href="https://github.com/yourusername/jmBIG">GitHub</a></li>
-</ul>
-<hr>
-</section>
-<section id="jmtwostage" class="level2">
-<h2 class="anchored" data-anchor-id="jmtwostage">🔹 jmtwostage</h2>
-<p><strong>Description:</strong><br>
-Implements two-stage joint modeling of longitudinal and survival outcomes for scenarios where traditional joint models may be computationally heavy.</p>
-<ul>
-<li>🔗 <a href="https://github.com/yourusername/jmtwostage">GitHub</a></li>
-</ul>
-<hr>
-</section>
-<section id="jmbdirect" class="level2">
-<h2 class="anchored" data-anchor-id="jmbdirect">🔹 jmbdirect</h2>
-<p><strong>Description:</strong><br>
-Direct estimation approach for joint modeling with longitudinal and time-to-event data using Bayesian and semiparametric techniques.</p>
-<ul>
-<li>🔗 <a href="https://github.com/yourusername/jmbdirect">GitHub</a></li>
+<li>📦 <a href="https://cran.r-project.org/web/packages/dscoreMSM/index.html">CRAN</a></li>
+<li>🔗 <a href="https://atanu.shinyapps.io/dscoremsmnew-1/#section-dscore">Explore the app here</a></li>
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

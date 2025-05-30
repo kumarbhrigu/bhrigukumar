@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -136,8 +170,8 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#miipw" id="toc-miipw" class="nav-link" data-scroll-target="#miipw">🔹 MIIPW</a></li>
   <li><a href="#jmbig" id="toc-jmbig" class="nav-link" data-scroll-target="#jmbig">🔹 jmBIG</a></li>
-  <li><a href="#jmtwostage" id="toc-jmtwostage" class="nav-link" data-scroll-target="#jmtwostage">🔹 jmtwostage</a></li>
-  <li><a href="#jmbdirect" id="toc-jmbdirect" class="nav-link" data-scroll-target="#jmbdirect">🔹 jmbdirect</a></li>
+  <li><a href="#jmtwostage" id="toc-jmtwostage" class="nav-link" data-scroll-target="#jmtwostage">🔹 JMtwostage</a></li>
+  <li><a href="#jmbdirect-joint-model-for-longitudinal-and-multiple-time-to-events-data" id="toc-jmbdirect-joint-model-for-longitudinal-and-multiple-time-to-events-data" class="nav-link" data-scroll-target="#jmbdirect-joint-model-for-longitudinal-and-multiple-time-to-events-data">🔹 JMbdirect: Joint Model for Longitudinal and Multiple Time to Events Data</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -171,9 +205,9 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Description:</strong><br>
 An R package for fitting Generalized Estimating Equations (GEE) with missing data using a combination of Mean Score (MS), Inverse Probability Weighting (IPW), and Multiple Imputation (MI).</p>
 <ul>
-<li>📦 <a href="">CRAN (Coming Soon)</a></li>
-<li>🔗 <a href="https://github.com/yourusername/MIIPW">GitHub</a></li>
-<li>📄 <a href="https://yourusername.github.io/MIIPW">Documentation</a></li>
+<li>📦 <a href="https://cran.r-project.org/web/packages/MIIPW/index.html">CRAN</a></li>
+<li>🔗 <a href="https://github.com/kumarbhrigu/MIIPW">GitHub</a></li>
+<li>📄 <a href="https://kumarbhrigu.github.io/MIIPW/">Documentation</a></li>
 </ul>
 <hr>
 </section>
@@ -182,25 +216,35 @@ An R package for fitting Generalized Estimating Equations (GEE) with missing dat
 <p><strong>Description:</strong><br>
 A flexible and scalable joint modeling toolkit for large longitudinal and survival datasets. Supports <code>JMbayes2</code>, <code>rstanarm</code>, <code>joineRML</code>, and <code>FastJM</code>.</p>
 <ul>
-<li>🔗 <a href="https://github.com/yourusername/jmBIG">GitHub</a></li>
+<li>📦 <a href="https://cran.r-project.org/web/packages/jmBIG/index.html">CRAN</a></li>
+<li>🔗 <a href="https://kumarbhrigu.github.io/jmBIG/">GitHub</a></li>
+<li>📄 <a href="https://kumarbhrigu.github.io/jmBIG/">Documentation</a></li>
 </ul>
 <hr>
 </section>
 <section id="jmtwostage" class="level2">
-<h2 class="anchored" data-anchor-id="jmtwostage">🔹 jmtwostage</h2>
+<h2 class="anchored" data-anchor-id="jmtwostage">🔹 JMtwostage</h2>
 <p><strong>Description:</strong><br>
-Implements two-stage joint modeling of longitudinal and survival outcomes for scenarios where traditional joint models may be computationally heavy.</p>
+Implements two-stage joint modeling of longitudinal and survival outcomes for scenarios where traditional joint models may be computationally heavy. The package installed using the following code</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install the remotes package if not already installed</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"remotes"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Install JMtwostage from GitHub</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"kumarbhrigu/JMtwostage"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>🔗 <a href="https://github.com/yourusername/jmtwostage">GitHub</a></li>
+<li>🔗 <a href="https://kumarbhrigu.github.io/JMtwostage/">GitHub</a></li>
+<li>📄 <a href="https://kumarbhrigu.github.io/JMtwostage/">Documentation</a></li>
 </ul>
 <hr>
 </section>
-<section id="jmbdirect" class="level2">
-<h2 class="anchored" data-anchor-id="jmbdirect">🔹 jmbdirect</h2>
+<section id="jmbdirect-joint-model-for-longitudinal-and-multiple-time-to-events-data" class="level2">
+<h2 class="anchored" data-anchor-id="jmbdirect-joint-model-for-longitudinal-and-multiple-time-to-events-data">🔹 JMbdirect: Joint Model for Longitudinal and Multiple Time to Events Data</h2>
 <p><strong>Description:</strong><br>
-Direct estimation approach for joint modeling with longitudinal and time-to-event data using Bayesian and semiparametric techniques.</p>
+Provides model fitting, prediction, and plotting for joint models of longitudinal and multiple time-to-event data, including methods from Rizopoulos (2012) <a href="doi:10.1201/b12208" class="uri">doi:10.1201/b12208</a>. Useful for handling complex survival and longitudinal data in clinical research.</p>
 <ul>
-<li>🔗 <a href="https://github.com/yourusername/jmbdirect">GitHub</a></li>
+<li>📦 <a href="https://cran.r-project.org/web/packages/JMbdirect/index.html">CRAN</a></li>
+<li>🔗 <a href="https://kumarbhrigu.github.io/JMbdirect/">GitHub</a></li>
+<li>📄 <a href="https://kumarbhrigu.github.io/JMbdirect/">Documentation</a></li>
 </ul>
 
 

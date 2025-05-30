@@ -1,5 +1,5 @@
 ---
-title: "Publications"
+title: ""
 format: html
 ---
 
@@ -7,62 +7,72 @@ format: html
 
 Below is a list of my selected academic publications and working papers. You can filter or browse by category.
 
----
+------------------------------------------------------------------------
 
 ## 📝 Journal Articles
 
-### **1. MIIPW: An R package for GEE with missing data using MI and IPW**
-**Authors:** Bhrigu Kumar Rajbongshi, Atanu Bhattacharjee, Gajendra K Vishwakarma  
-**Journal:** *Journal of Statistical Software* (Under Review)  
-**Abstract:** This paper introduces the MIIPW R package for robust longitudinal data analysis with missing data using mean score, IPW, and MI strategies.  
-🔗 [GitHub](https://github.com/yourusername/MIIPW) | 📄 [Manuscript (PDF)](files/miipw-paper.pdf)
+**1.** Bhattacharjee, A., **Rajbongshi, B. K.**, & Vishwakarma, G. K. (2024). **jmBIG: enhancing dynamic risk prediction and personalized medicine through joint modeling of longitudinal and survival data in big routinely collected data**. BMC Medical Research Methodology, 24(1), 172.
 
----
+🔗 [GitHub](https://github.com/kumarbhrigu/jmBIG) \| 📄 [Manuscript (PDF)](https://link.springer.com/article/10.1186/s12874-024-02289-0)
 
-### **2. Joint Modeling for Big Data using jmBIG**
-**Authors:** Bhrigu Kumar Rajbongshi, Atanu Bhattacharjee  
-**Journal:** *Computational Statistics & Data Analysis* (Submitted)  
-🔗 [GitHub](https://github.com/yourusername/jmBIG) | 📄 [Preprint](https://arxiv.org/abs/xxxxx)
+------------------------------------------------------------------------
 
----
+**2.** Bhattacharjee, A., Vishwakarma, G. K., **Rajbongshi, B. K.**, & Tripathy, A. (2024). **MIIPW: An R package for Generalized Estimating Equations with missing data integration using a combination of mean score and inverse probability weighted approaches and multiple imputation**. Expert Systems with Applications, 238, 121973.
+
+🔗 [GitHub](https://github.com/kumarbhrigu/MIIPW) \| 📄 [Manuscript (PDF)](https://www.sciencedirect.com/science/article/pii/S0957417423024752)
+
+------------------------------------------------------------------------
+
+ **3.** Vishwakarma, G. K., Bhattacherjee, A., **Rajbongshi, B. K.**, & Tripathy, A. (2024). **Censored imputation of time to event outcome through survival proximity score method**. Journal of Computational and Applied Mathematics, 451, 116103. 🔗 [GitHub](https://github.com/kumarbhrigu/dscore) \| 📄 [Manuscript (PDF)](https://www.sciencedirect.com/science/article/pii/S0377042724003522)
+
+------------------------------------------------------------------------
+
+**4.** Bhattacharjee, A., Vishwakarma, G. K., Tripathy, A., & **Rajbongshi, B. K.** (2024). **Competing risk multistate censored data modeling by propensity score matching method**. Scientific Reports, 14(1), 4368.
+
+🔗 [GitHub](https://github.com/kumarbhrigu/dscore) \| 📄 [Manuscript (PDF)](https://www.nature.com/articles/s41598-024-54149-y)
+
+------------------------------------------------------------------------
 
 ## 🧪 Working Papers
 
 ### **1. Direct Bayesian Estimation for Joint Models**
-**Authors:** Bhrigu Kumar Rajbongshi, Atanu Bhattacharjee  
-**Status:** In Preparation  
+
+**Authors:** Bhrigu Kumar Rajbongshi, Atanu Bhattacharjee\
+**Status:** In Preparation\
 📦 Package: [`jmbdirect`](https://github.com/yourusername/jmbdirect)
 
----
+------------------------------------------------------------------------
 
 ## 🎤 Conference Presentations
 
-### “MIIPW: Generalized Estimating Equations with Missing Data”
-**Conference:** RSS International Conference 2024  
-**Location:** Harrogate, UK  
-**Format:** Poster Presentation  
-📽️ [View Poster (PDF)](files/miipw_poster.pdf)  
-🔗 [GitHub Project](https://github.com/yourusername/MIIPW)  
-🌐 [Live Slides](https://yourusername.github.io/MIIPW/presentation.html)
+### "MIIPW: An R package for Generalized Estimating Equations with missing data integration using a combination of mean score and inverse probability weighted approaches and multiple imputation"
 
----
+**Conference:** Royal Statistical Society International Conference, 2024\
+**Location:** Brighton, UK\
+**Format:** Poster Presentation\
+📽️ [View Poster (PDF)](files/miipw_poster.pdf)\
+🔗 [GitHub Project](https://github.com/yourusername/MIIPW)
 
-### “Joint Modeling for Big Data”
-**Conference:** ISPSDA 2023  
-**Location:** IIT Guwahati  
-**Format:** Invited Talk  
-📽️ [Slides (Quarto RevealJS)](https://yourusername.github.io/jmBIG/talk.html)  
-🔗 [GitHub Repository](https://github.com/yourusername/jmBIG)
+------------------------------------------------------------------------
 
----
+### "MIIPW: An R package for Generalized Estimating Equations with missing data"
 
-### “Bayesian Estimation in Joint Models”
-**Conference:** Young Statisticians Meet 2023  
-**Location:** Online  
-📽️ [Watch Presentation](https://yourusername.github.io/jmbdirect/presentation.html)  
+**Conference:** R/medicine 2025 **Location:** a virtual of rconsortium\
+**Format:** contributed Talk\
+📽️ [Slides (Quarto RevealJS)](https://yourusername.github.io/jmBIG/talk.html)\
+🔗 [GitHub Repository](https://github.com/yourusername/jmBIG) 🌐 [Youtube](https://yourusername.github.io/MIIPW/presentation.html)
+
+------------------------------------------------------------------------
+
+### "Bayesian Estimation in Joint Models"
+
+**Conference:** Young Statisticians Meet 2023\
+**Location:** Online\
+📽️ [Watch Presentation](https://yourusername.github.io/jmbdirect/presentation.html)\
 🔗 [GitHub Repo](https://github.com/yourusername/jmbdirect)
 
 ## 📄 my links
 
-- [Researchgate](https://www.researchgate.net/profile/Bhrigu-Rajbongshi?ev=hdr_xprf)  
-- [View Google Scholar Profile](https://scholar.google.com/citations?user=XtQEXSUAAAAJ&hl=en)
+-   [Researchgate](https://www.researchgate.net/profile/Bhrigu-Rajbongshi?ev=hdr_xprf)\
+-   [View Google Scholar Profile](https://scholar.google.com/citations?user=XtQEXSUAAAAJ&hl=en)
+

@@ -1,0 +1,45 @@
+---
+title: "jmBIGshinny"
+format: html
+---
+
+
+# 📢 Introduction to the **jmBIG** Shiny App
+
+The **jmBIG** Shiny app provides powerful analytical tools tailored for **BIG data**, where the number of observations (rows) is extremely large. It enables users to perform **joint modeling** of longitudinal and time-to-event data through an intuitive interface, facilitating predictive modeling and statistical inference in large-scale studies.
+
+Joint modeling is particularly valuable in **medical research**, where the goal is often to understand the dynamic relationship between a **longitudinal biomarker** (e.g., repeated lab measures) and a **clinical outcome** (e.g., survival, disease progression). This app allows researchers and clinicians to explore such relationships and make **subject-specific predictions** about health outcomes over time.
+
+---
+
+## 🔧 What the App Offers
+
+- A suite of four joint modeling functions, built on top of:
+  - [`JMbayes2`](https://cran.r-project.org/package=JMbayes2)
+  - [`FastJM`](https://cran.r-project.org/package=FastJM)
+  - [`rstanarm`](https://mc-stan.org/rstanarm/)
+  - [`joineRML`](https://cran.r-project.org/package=joineRML)
+
+- Each function accommodates:
+  - **Longitudinal submodel**: e.g., `y ~ 1 + x1` (fixed effects), and `~ 1 | id` (random effects)
+  - **Survival submodel**: e.g., `Surv(time, status) ~ x1 + x2`
+  - **Sample size input**: splits large datasets into smaller chunks for efficient processing
+
+---
+
+## 📦 Key Features
+
+- Fit **Bayesian** and **frequentist** joint models
+- Upload your own data or use default datasets included in the `jmBIG` package
+- Specify:
+  - Number of MCMC chains (`nchain`)
+  - Time, ID, and visit variables
+  - Custom model formulas
+- Designed for **flexibility** and **scalability** in BIG data settings
+
+---
+
+## Available here 
+🔗 [GitHub](https://atanuucsi.shinyapps.io/jmapp/)
+
+---
